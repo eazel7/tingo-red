@@ -8,7 +8,7 @@ module.exports = function (RED) {
         node.on('input', function (msg) {
             var db = RED.nodes.getNode(config.db).getDB();
 
-            db.collection(config.collection).find({}).toArray(function (err, docs) {
+            db.collection(config.collection).find(msg.payload).toArray(function (err, docs) {
                 msg.payload = docs;
                 node.send(msg);
             });
