@@ -1,0 +1,18 @@
+<script type="text/javascript">
+    RED.nodes.registerType('tingodb',{
+        category: 'config',
+        defaults: {
+            path: { value: '', required: true }
+        },
+        label: function() {
+            return 'tingodb at ' + this.path;
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="tingodb">
+    <div class="form-row">
+        <label for="node-config-input-path"><i class="icon-bookmark"></i> Path</label>
+        <input type="text" id="node-config-input-path">
+    </div>
+</script>
