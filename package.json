@@ -11,6 +11,13 @@
       "tingodb-update": "update.js"
     }
   },
+  "bugs": {
+    "url": "https://github.com/eazel7/tingo-red/issues"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/eael7/tingo-red.git"
+  },
   "scripts": {},
   "author": {
     "name": "Diego Pérez",
