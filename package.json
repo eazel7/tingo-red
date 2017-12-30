@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-tingodb",
-  "version": "1.0.3",
+  "version": "1.0.3.1",
   "description": "TingoDB nodes",
   "keywords": [ "node-red", "tingo", "tingodb", "database", "db" ],
   "node-red": {
