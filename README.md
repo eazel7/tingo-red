@@ -1,6 +1,6 @@
 # TingoDB nodes for NodeRED
 
-> Watch [https://www.youtube.com/watch?v=Ice3myP99VI] for a 2-minutes demo
+> Watch https://www.youtube.com/watch?v=Ice3myP99VI for a 2-minutes demo
 
 ## DB configuration node
 
