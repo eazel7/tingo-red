@@ -6,6 +6,8 @@
 
 All other nodes depend on this one, it requires a TingoDB database path. Collection name is a per-node property.
 
+> Database path must be a folder, TingoDB uses a file to save each collection
+
 ## Insert node
 
 Inserts the `msg.payload` as document into a collection.
