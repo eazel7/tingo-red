@@ -2,7 +2,13 @@
   "name": "node-red-contrib-tingodb",
   "version": "1.0.4",
   "description": "TingoDB nodes",
-  "keywords": [ "node-red", "tingo", "tingodb", "database", "db" ],
+  "keywords": [
+    "node-red",
+    "tingo",
+    "tingodb",
+    "database",
+    "db"
+  ],
   "node-red": {
     "nodes": {
       "tingodb": "tingodb.js",
@@ -15,15 +21,18 @@
   "bugs": {
     "url": "https://github.com/eazel7/tingo-red/issues"
   },
-    "repository": {
-    "type" : "git",
-    "url" : "https://github.com/eazel7/tingo-red.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eazel7/tingo-red.git"
   },
   "scripts": {},
   "author": {
     "name": "Diego Pérez",
     "email": "diego@cerovueltas.com.ar"
   },
+  "contributors": {
+      "name": "Alexandre Gaudet"
+  }
   "license": "ISC",
   "dependencies": {
     "tingodb": "^0.5.1"
