@@ -7,8 +7,6 @@ module.exports = function (RED) {
         var node = this;
         node.multi = config.multi
         node.upsert = config.upsert
-        //console.log("config.multi   " + config.multi)
-        //console.log("config.upsert   " + config.upsert)
         node.on('input', function (msg) {
             var db = RED.nodes.getNode(config.db).getDB();
             db.collection(config.collection).update(msg.predicate, msg.update, { multi: node.multi, upsert:node.upsert}, function (err) {
