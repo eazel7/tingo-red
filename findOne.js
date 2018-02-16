@@ -1,7 +1,7 @@
 require('tingodb');
 
 module.exports = function (RED) {
-    function TingoDBFindNode(config) {
+    function TingoDBFindOneNode(config) {
         RED.nodes.createNode(this, config);
         var node = this;
 
@@ -14,5 +14,5 @@ module.exports = function (RED) {
             });
         });
     }
-    RED.nodes.registerType("tingodb-findOne", TingoDBfindOneNode);
+    RED.nodes.registerType("tingodb-findOne", TingoDBFindOneNode);
 }

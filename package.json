@@ -32,7 +32,8 @@
     "email": "diego@cerovueltas.com.ar"
   },
   "contributors": {
-    "name": "Alexandre Gaudet"
+    "name": "Alexandre Gaudet",
+    "email": "fakstory@gmail.com"
   },
   "license": "ISC",
   "dependencies": {
