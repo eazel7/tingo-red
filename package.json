@@ -13,6 +13,7 @@
     "nodes": {
       "tingodb": "tingodb.js",
       "tingodb-find": "find.js",
+      "tingodb-findOne": "findOne.js",
       "tingodb-insert": "insert.js",
       "tingodb-remove": "remove.js",
       "tingodb-update": "update.js"
