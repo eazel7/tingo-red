@@ -32,7 +32,7 @@
   },
   "contributors": {
       "name": "Alexandre Gaudet"
-  }
+  },
   "license": "ISC",
   "dependencies": {
     "tingodb": "^0.5.1"
