@@ -7,7 +7,11 @@ module.exports = function (RED) {
 
         node.on('input', function (msg) {
             var db = RED.nodes.getNode(config.db).getDB();
-            db.collection(config.collection).findOne(msg.payload).toArray(function (err, docs) {
+            console.log(msg.payload)
+            //msg.payload = "tata"
+            //node.send(msg);
+            //collection.findOne({userId:msg.payload.params.userId}, printFunction)
+            db.collection(config.collection).findOne(msg.payload,function (err, docs) {
                 //TODO add error too. :\
                 msg.payload = docs;
                 node.send(msg);
