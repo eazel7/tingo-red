@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('tingodb-find', {
+    RED.nodes.registerType('tingodb-findOne', {
         category: 'function',
         color: '#a6bbcf',
         defaults: {
@@ -10,12 +10,12 @@
         outputs: 1,
         icon: "find.png",
         label: function () {
-            return (this.collection || "tingodb") + " (find)";
+            return (this.collection || "tingodb") + " (findOne)";
         }
     });
 </script>
 
-<script type="text/x-red" data-template-name="tingodb-find">
+<script type="text/x-red" data-template-name="tingodb-findOne">
     <div class="form-row">
         <label for="node-input-db"><i class="icon-tag"></i> DB</label>
         <input type="text" id="node-input-db" placeholder="DB">
@@ -26,6 +26,6 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="tingodb-find">
-    <p>Performs a .find query over a collection.</p>
+<script type="text/x-red" data-help-name="tingodb-findOne">
+    <p>Performs a .findOne query over a collection.</p>
 </script>
