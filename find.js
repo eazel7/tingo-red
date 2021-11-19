@@ -9,9 +9,6 @@ module.exports = function (RED) {
             let db = RED.nodes.getNode(config.db).getDB();
 
             let cursor = db.collection(config.collection).find(msg.payload);
-            if (msg.project) {
-                cursor.project(msg.project);
-            }
             if (msg.sort) {
                 cursor.sort(msg.sort);
             }
