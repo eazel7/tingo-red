@@ -16,6 +16,14 @@ Inserts the `msg.payload` as document into a collection.
 
 Looks for documents into a collection using `msg.payload` as predicate.
 
+`msg.sort` (optional) to set sorting
+
+`msg.project` (optional) to define the returned fields
+
+`msg.limit` (optional) to define the maximum number of returned results (for paging)
+
+`msg.skip` (optional) to define the number of results to skip (for paging)
+
 ## Update node
 
 Updates a collection's documents. `msg.predicate` will be the filter and `msg.update` the update operation itself. `db.collection(collectionName).update(...)` is invoked using `{multi: true}`.
