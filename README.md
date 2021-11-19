@@ -18,8 +18,6 @@ Looks for documents into a collection using `msg.payload` as predicate.
 
 `msg.sort` (optional) to set sorting
 
-`msg.project` (optional) to define the returned fields
-
 `msg.limit` (optional) to define the maximum number of returned results (for paging)
 
 `msg.skip` (optional) to define the number of results to skip (for paging)
