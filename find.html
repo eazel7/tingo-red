@@ -27,5 +27,13 @@
 </script>
 
 <script type="text/x-red" data-help-name="tingodb-find">
-    <p>Performs a .find query over a collection.</p>
+    <p>Performs a .find query over a collection</p>
+    <p>Options:
+        <ul>
+            <li>msg.payload (object) - <a href="https://docs.mongodb.com/drivers/node/current/fundamentals/crud/read-operations/retrieve/">define query</a></li>
+            <li>msg.sort (object) - <a href="https://docs.mongodb.com/drivers/node/current/fundamentals/crud/read-operations/sort/">define sorting</a></li>
+            <li>msg.limit (number) - <a href="https://docs.mongodb.com/drivers/node/current/fundamentals/crud/read-operations/limit/">limit number of results</a></li>
+            <li>msg.skip (number) - <a href="https://docs.mongodb.com/drivers/node/current/fundamentals/crud/read-operations/skip/">skip results</a></li>
+        </ul>
+    </p>
 </script>

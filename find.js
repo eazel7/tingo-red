@@ -6,11 +6,21 @@ module.exports = function (RED) {
         var node = this;
 
         node.on('input', function (msg) {
-            var db = RED.nodes.getNode(config.db).getDB();
+            let db = RED.nodes.getNode(config.db).getDB();
 
-            db.collection(config.collection).find(msg.payload).toArray(function (err, docs) {
-                msg.payload = docs;
-                node.send(msg);
+            let cursor = db.collection(config.collection).find(msg.payload);
+            if (msg.sort) {
+                cursor.sort(msg.sort);
+            }
+            if (msg.limit) {
+                cursor.limit(msg.limit);
+            }
+            if (msg.skip) {            
+                cursor.skip(msg.skip);
+            }
+            cursor.toArray(function (err, docs) {
+                    msg.payload = docs;
+                    node.send(msg);
             });
         });
     }
